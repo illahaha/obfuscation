@@ -147,6 +147,7 @@ main() {
     #if INIT_VIA_TLS
         // dummy call
         // if remove this call TLS-init doesn't work
+        // see for more info: http://code.google.com/p/corkami/wiki/PE?show=content#TLS
         #pragma comment(lib, "user32.lib")
         CharLower("1");
     #endif
